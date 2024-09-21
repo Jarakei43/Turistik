@@ -1,0 +1,39 @@
+.about {
+    
+      &__klinica{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &__doctor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 119px;
+      }
+      &__medic{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    &__lekar {
+       
+        &-title {
+            width: 450px;
+        }
+        &-des {
+            font-family: "Inter";
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 91%;
+            color: #11002d;
+        }
+        &-text {
+            font-family: "Inter";
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 170%;
+            color: #11002d;
+        }
+    }
+}
