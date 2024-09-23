@@ -1,39 +1,101 @@
 .about {
-    
-      &__klinica{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      &__doctor{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 119px;
-      }
-      &__medic{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-    &__lekar {
-       
-        &-title {
-            width: 450px;
-        }
-        &-des {
-            font-family: "Inter";
-            font-weight: 500;
-            font-size: 32px;
-            line-height: 91%;
-            color: #11002d;
-        }
-        &-text {
-            font-family: "Inter";
-            font-weight: 300;
-            font-size: 15px;
-            line-height: 170%;
-            color: #11002d;
-        }
+   margin: 10px;
+  &__klinica {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__doctor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 119px;
+  }
+  &__medic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__lekar {
+    &-title {
+      max-width: 450px;
+      position: relative;
     }
+
+    &-des {
+      position: relative;
+      font-family: "Inter";
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 91%;
+      color: #11002d;
+    }
+    &-des::after {
+      position: absolute;
+      content: url("../images/line.svg");
+      width: 83px;
+      height: 53px;
+      top: -9px;
+      right: 55px;
+    }
+
+    &-des-second-child::after {
+      top: 21px;
+      right: 30px;
+    }
+    &-des-third-child::after {
+      top: -9px;
+      right: 127px;
+    }
+    &-des-forth-child::after {
+      top: -6px;
+      right: -15px;
+    }
+
+    &-text {
+      font-family: "Inter";
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 170%;
+      color: #11002d;
+    }
+  }
+}
+@media(max-width:615px){
+    .about{
+      &__img{
+        width: 300px;
+        height: 300px;
+      }
+    }
+}
+@media(max-width:615px){
+  .about{
+    &__lekar-des::after{
+      width: 63px;
+      height: 33px;
+      top: -9px;
+      right: 55px;
+      display: none;
+
+    }
+    &__lekar{
+      &-des-second-child::after {
+        top: 21px;
+        right: 30px;
+        display: none;
+      }
+      &-des-third-child::after {
+        top: -9px;
+        right: 127px;
+        display: none;
+      }
+      &-des-forth-child::after {
+        top: -6px;
+        right: -15px;
+        display: none;
+      }
+    }
+  }
 }

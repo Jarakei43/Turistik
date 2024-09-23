@@ -1,7 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a,
+input,
+span {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1240px;
+}
+
+.about {
+  margin: 10px;
+}
 .about__klinica {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .about__doctor {
   display: flex;
@@ -15,14 +47,36 @@
   align-items: center;
 }
 .about__lekar-title {
-  width: 450px;
+  max-width: 450px;
+  position: relative;
 }
 .about__lekar-des {
+  position: relative;
   font-family: "Inter";
   font-weight: 500;
   font-size: 32px;
   line-height: 91%;
   color: #11002d;
+}
+.about__lekar-des::after {
+  position: absolute;
+  content: url("../images/line.svg");
+  width: 83px;
+  height: 53px;
+  top: -9px;
+  right: 55px;
+}
+.about__lekar-des-second-child::after {
+  top: 21px;
+  right: 30px;
+}
+.about__lekar-des-third-child::after {
+  top: -9px;
+  right: 127px;
+}
+.about__lekar-des-forth-child::after {
+  top: -6px;
+  right: -15px;
 }
 .about__lekar-text {
   font-family: "Inter";
@@ -30,4 +84,35 @@
   font-size: 15px;
   line-height: 170%;
   color: #11002d;
+}
+
+@media (max-width: 615px) {
+  .about__img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 615px) {
+  .about__lekar-des::after {
+    width: 63px;
+    height: 33px;
+    top: -9px;
+    right: 55px;
+    display: none;
+  }
+  .about__lekar-des-second-child::after {
+    top: 21px;
+    right: 30px;
+    display: none;
+  }
+  .about__lekar-des-third-child::after {
+    top: -9px;
+    right: 127px;
+    display: none;
+  }
+  .about__lekar-des-forth-child::after {
+    top: -6px;
+    right: -15px;
+    display: none;
+  }
 }/*# sourceMappingURL=index.css.map */
