@@ -1,0 +1,22 @@
+.destination{
+        overflow: hidden;
+    display: flex;
+    justify-content: center;
+     &__list{
+        font-family: "Inter-Extra Bold", sans-serif;
+        font-weight: 800;
+        font-size: 64px;
+        line-height: 91%;
+        color: #11002d;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap:24px;
+        margin-top: 56px;
+        padding-left:0px;        
+     }
+}
+    .destination svg{
+    stroke-width: 3px;
+    stroke: #5200d9;
+}
