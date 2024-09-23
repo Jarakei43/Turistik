@@ -1,0 +1,100 @@
+.hero {
+  background-image: url("../images/heroBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1080px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+    align-items: center;
+  }
+
+  &__info {
+    margin-top: 344px;
+  }
+
+  &__title {
+    font-family: "Inter";
+    text-align: center;
+    font-weight: 800;
+    font-size: 40px;
+    color: #fff;
+  }
+
+  &__description {
+    margin-top: 17px;
+    font-family: "Inter";
+    text-align: center;
+    font-weight: 400;
+    font-size: 28px;
+    color: #fff;
+  }
+
+  &__form {
+    display: flex;
+    border-radius: 5px;
+    background: #fff;
+
+    &-country {
+      appearance: none;
+      cursor: pointer;
+      padding-left: 40px;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+
+      option {
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 91%;
+        color: #11002d;
+      }
+    }
+
+    &-date {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 17px 0px 17px 40px;
+
+      b {
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 18px;
+        color: #11002d;
+      }
+    }
+
+    &-people {
+      padding-right: 40px;
+      margin-left: 77px;
+      display: flex;
+      align-items: center;
+      span {
+        padding-left: 40px;
+        cursor: pointer;
+      }
+    }
+
+    &-line {
+      height: 40px;
+      width: 0.5px;
+      background: #5200d9;
+    }
+  }
+
+  &__btn {
+    border-radius: 5px;
+    padding: 24px 32px;
+    background: #5200d9;
+    font-family: "Inter";
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 91%;
+    color: #fff;
+    border: none;
+  }
+}

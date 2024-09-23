@@ -1,0 +1,143 @@
+.header {
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -241px;
+  }
+
+  &__logo {
+    padding-top: 8px;
+    display: flex;
+    align-items: start;
+  }
+
+  &__nav {
+    padding-top: 52px;
+    display: flex;
+    gap: 67px;
+
+    &-link {
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 91%;
+      color: #fff;
+    }
+  }
+
+  &__btn {
+    margin-top: 42px;
+    border: 0.5px solid #fff;
+    border-radius: 5px;
+    padding: 8px;
+    height: 36px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background: transparent;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 91%;
+    color: #fff;
+  }
+}
+
+.header__nav-link:last-child {
+  margin-left: 104px;
+}
+
+.accordion-button {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 91%;
+  background-color: transparent;
+  width: 95px;
+  color: #fff;
+  padding: 0px;
+  padding-bottom: 8px;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.accordion-item {
+  border: none;
+  max-width: 100%;
+  background: transparent;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("../images/accordionArrow.svg");
+}
+
+.accordion-button::after {
+  margin-left: 0px;
+  background-image: url("../images/accordionArrow.svg");
+}
+
+.accordion {
+  width: 199px;
+}
+
+.accordion-body {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background: #5200d9;
+  padding: 0;
+
+  a {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 91%;
+    padding: 8px;
+    color: #fff;
+  }
+}
+
+.accordion-body-line {
+  margin-left: 8px;
+  width: 183px;
+  height: 0.5px;
+  background: #fff;
+}
+
+.accordion-body:not(:first-child) {
+  padding-top: 8px;
+}
+
+.accordion-body:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.accordion-body:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+@media (max-width:992px) {
+  .header {
+    &__content {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    &__nav {
+      gap: 50px;
+      &-link {
+      }
+    }
+  }
+}

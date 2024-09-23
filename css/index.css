@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a,
+input,
+span {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1240px;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -241px;
+}
+.header__logo {
+  padding-top: 8px;
+  display: flex;
+  align-items: start;
+}
+.header__nav {
+  padding-top: 52px;
+  display: flex;
+  gap: 67px;
+}
+.header__nav-link {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 91%;
+  color: #fff;
+}
+.header__btn {
+  margin-top: 42px;
+  border: 0.5px solid #fff;
+  border-radius: 5px;
+  padding: 8px;
+  height: 36px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background: transparent;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 91%;
+  color: #fff;
+}
+
+.header__nav-link:last-child {
+  margin-left: 104px;
+}
+
+.accordion-button {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 91%;
+  background-color: transparent;
+  width: 95px;
+  color: #fff;
+  padding: 0px;
+  padding-bottom: 8px;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.accordion-item {
+  border: none;
+  max-width: 100%;
+  background: transparent;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("../images/accordionArrow.svg");
+}
+
+.accordion-button::after {
+  margin-left: 0px;
+  background-image: url("../images/accordionArrow.svg");
+}
+
+.accordion {
+  width: 199px;
+}
+
+.accordion-body {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background: #5200d9;
+  padding: 0;
+}
+.accordion-body a {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 91%;
+  padding: 8px;
+  color: #fff;
+}
+
+.accordion-body-line {
+  margin-left: 8px;
+  width: 183px;
+  height: 0.5px;
+  background: #fff;
+}
+
+.accordion-body:not(:first-child) {
+  padding-top: 8px;
+}
+
+.accordion-body:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.accordion-body:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+@media (max-width: 992px) {
+  .header__content {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .header__nav {
+    gap: 50px;
+  }
+}
+.hero {
+  background-image: url("../images/heroBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1080px;
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+  align-items: center;
+}
+.hero__info {
+  margin-top: 344px;
+}
+.hero__title {
+  font-family: "Inter";
+  text-align: center;
+  font-weight: 800;
+  font-size: 40px;
+  color: #fff;
+}
+.hero__description {
+  margin-top: 17px;
+  font-family: "Inter";
+  text-align: center;
+  font-weight: 400;
+  font-size: 28px;
+  color: #fff;
+}
+.hero__form {
+  display: flex;
+  border-radius: 5px;
+  background: #fff;
+}
+.hero__form-country {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  padding-left: 40px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+.hero__form-country option {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 91%;
+  color: #11002d;
+}
+.hero__form-date {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 17px 0px 17px 40px;
+}
+.hero__form-date b {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  color: #11002d;
+}
+.hero__form-people {
+  padding-right: 40px;
+  margin-left: 77px;
+  display: flex;
+  align-items: center;
+}
+.hero__form-people span {
+  padding-left: 40px;
+  cursor: pointer;
+}
+.hero__form-line {
+  height: 40px;
+  width: 0.5px;
+  background: #5200d9;
+}
+.hero__btn {
+  border-radius: 5px;
+  padding: 24px 32px;
+  background: #5200d9;
+  font-family: "Inter";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 91%;
+  color: #fff;
+  border: none;
+}/*# sourceMappingURL=index.css.map */
